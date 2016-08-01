@@ -1,0 +1,22 @@
+13/7
+sudo /etc/init.d/httpd status
+ps = show all your processes
+ps -efw = show all processes (all other users)
+kill <number> = kill a process by PID (as owned by user)
+curl http://<ip address>/ = command line web "browser"
+
+homework - learn about starting / stopping processes
+learn about processes
+fixed the security group to be http and p
+Make a nicer page for your server. Perhaps a cat? Look at the access.log and learn what the fields mean.
+Homework. Make a nicer page for your server. Perhaps a cat? Look at the access.log and learn what the fields mean.
+
+upload a file:
+scp -i MyKeyFile.pem FileToUpload.pdf ubuntu@ec2-123-123-123-123.compute-1.amazonaws.com:FileToUpload.pdf
+
+e.g. --> scp -i Downloads/<keyname>.pem projects/ops_coaching/index.html ec2-user@<ip address>:/var/www/html
+
+starting service = sudo service httpd start
+stopping service = sudo service httpd stop
+restart service = sudo service httpd restart
+service status = sudo service httpd status
