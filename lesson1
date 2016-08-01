@@ -4,7 +4,7 @@ chmod - change permissions
 ls -la - long listing a=hidden files
 chown - change ownership
 ssh -i = use private key
-   ssh -i ~/Downloads/TheresaFirstKeyPair.pem ec2-user@54.206.57.51
+   ssh -i ~/Downloads/<keyname>.pem ec2-user@<ip address>
 cat - concatenate or display content - cat to screen
 verify host key 
 sudo 
