@@ -1,0 +1,26 @@
+7/7
+wc - word count
+chmod - change permissions
+ls -la - long listing a=hidden files
+chown - change ownership
+ssh -i = use private key
+   ssh -i ~/Downloads/TheresaFirstKeyPair.pem ec2-user@54.206.57.51
+cat - concatenate or display content - cat to screen
+verify host key 
+sudo 
+sudoers /etc/sudoers
+sudo su
+	sudoers.d - cloud-init for ec2-users permissions
+
+create new user 
+	useradd theresa
+
+tail -n3 passwd
+	output ... theresa:x:501:501::/home/theresa:/bin/bash
+
+
+
+7/7 homework
+	install webserver - work out how to install apache
+	(then to explore starting services, etc. managing packages)
+
