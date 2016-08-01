@@ -1,0 +1,44 @@
+19/7
+> redirect operator - sends output to file
+| pipe - sends output to another command
+
+ps -efw > output.txt 
+	=> list process and direct std out to file 
+
+wc output.txt (word count of file)
+=>  79  672 5100 output.txt
+    lines words characters
+
+wc -l output.txt (line count of fifle)
+=> 79 output.txt
+
+grep - string matching search - prints the lines that match  criteria
+grep apache output.txt - 
+grep apache output.txt | wc -l 
+ps -efw | grep apache | grep -v grep 
+	- list the processes and pipe to matching apache string and pipe to excluding any that exclude grep
+>> appends output to file
+
+ps -efw | grep apache | grep -v grep | wc -l >> no_proc.txt
+date >> no_proc.txt
+	8
+	Tue Jul 19 01:43:53 UTC 2016
+
+
+cron = scheduler	
+crontab (filename)
+crontab -e (edit the file)
+(in crontab)
+	* * * * * ps -efw | grep apache | grep -v grep | wc -l >> no_proc.txt
+	* * * * * date >> no_proc.txt
+
+hostname
+reboot
+
+
+homework -
+tests to reuse the commands just use, different combos of pipes etc.
+e.g. reboot server at 5am
+or count the number of users logged in
+clarify std in and std out piping
+scheduling cron etc.
