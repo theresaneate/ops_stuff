@@ -1,0 +1,40 @@
+1/8
+dns - 
+hosts (file) - Mac /etc/hosts - applies to machine
+decentralised & hierarchical
+
+dig - dns lookup utlitity
+
+dig +short www.realestate.com.au
+cname = canonical name (pointer)
+'A' record = address
+dig www.realestate.com.au
+root zone (highest in hierarchy)
+root -> leaf nodes
+
+dig @8.8.8.8 NS realestate.com.au. (NS = name service/server)
+
+. (dot) is root .... e.g. au.
+whois <ipaddress> or <name>
+tells you 'who' owns the address
+TLD = top level domain e.g. .com
+
+.au servers are only responsible for .au domains (only in next level)
+
+recursive dns server will query the hierachy (not all are recursive)
+
+root = not recursive (to only respond to their zone, otherwise overloaded with all requests)
+
+local dns is recursive (e.g. one in building 10.x.x.x)
+
+to initially look up root servers, local DNS knows the root hints file
+
+
+homework 
+
+....install & run DNS on EC2 instance
+install name server - BIND nameserver
+
+configure to resolve host names to ip address
+
+register domain <any name> (not through Amazon)
