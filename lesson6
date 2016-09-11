@@ -1,0 +1,17 @@
+24/8
+ps -efw | grep bind
+named listens on port 53
+netstat for processes <> ports
+ - sudo netstat -anp
+ cat services | grep 53
+ cat services | grep " 53/"
+ sudo netstat -anp | grep named
+
+ config file - named.conf
+ zone file
+ sudo vi named.conf - comment out the mention of port 53 on 0.0.0.0:* - this will return to default settings & //      allow-query     { localhost; };
+sudo netstat -anp | grep named
+sudo service named restart
+
+
+
