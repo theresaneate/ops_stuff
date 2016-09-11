@@ -1,0 +1,37 @@
+30/8
+
+GZIP
+gunzip random.txt.gz
+
+cat random.txt | gzip
+
+cat random.txt | gzip > different.txt.gzip
+
+ cat different.txt.gzip | gunzip -
+
+ - (hyphen) = "std in"
+
+ df = disk free
+
+
+ Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/xvda1       8123812 1498032   6525532  19% /
+devtmpfs          501092      56    501036   1% /dev
+tmpfs             509668       0    509668   0% /dev/shm
+
+tar
+
+
+tar -c -f tarstuff_file.tar tarstuff
+-c = create
+-f = which file to use (.tar file above)
+
+
+tar -t = all files in archive
+tar -x = extracts files from archive
+
+
+homework
+practice tar gzip gunzip
+tarball - combine gzip and tar?
+tgz file? 
