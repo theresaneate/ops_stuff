@@ -1,0 +1,10 @@
+16/8
+
+--more DNS--
+
+homework:
+grasp:-
+NS records
+CNAME records
+A records- 
+dig @54.206.123.18 theresaopsjourney.com
