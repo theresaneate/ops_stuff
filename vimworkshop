@@ -1,0 +1,105 @@
+vim fundamentals
+
+u = undo last change
+Ctrl R = undo the undo
+
+philosophy
+- don't overwrite defaults
+- do 1 thing & do it well
+
+:
+q quit
+wq write quit
+
+:help
+
+$> vimtutorx
+
+
+.vimrc for defaults
+
+
+https://gist.github.com/stevenocchipinti/01c5ade4bcf8f3a213f21a10cb945904
+:w /tmp/person.js
+
+
+:syntax o - save into vim
+
+
+These are motions:
+hjkl for moving arrow keys
+w, b - move by word 
+G, gg - top of page, bottom of page
+
+
+EDITING TEXT BY WORD
+v = highlight
+command (word) e.g
+
+vw = highight word
+dw = delete word
+
+c = change
+cgg = change from where you are to bottom of page (or line)
+
+
+COPY AND PASTE
+yy, p, P
+y + motion
+P - paste before the cursor
+p - paste after the cursor
+
+yw - yank the word
+
+yy - copy the line
+p - paste the clipboard
+
+
+
+MORE MOTIONS
+^, $ = start of line/end of line (also in regex)
+{,} = to beginning and to end paragraph
+(,) = to beginning and to end sentence
+d} = delete to end of paragraph
+
+
+/ = find
+/word
+fx = forward to single char
+tx = towards
+
+
+MORE FUNCTIONS
+> indent
+< deindent
+<< deindent entire line
+<} deindent to end of paragraph
+<{ deindent to beginning of paragraph
+
+= format
+==
+
+v + motion = highlight your motion
+vj = highlight moving down
+
+
+
+TEXT OBJECTS (not motions)
+iw, ip
+i", i'
+i(,i), i{i,i}
+
+viw = visual inside the word
+vip = visual inside the paragraph
+bcw = back change word
+ciw = change inside word
+diw = delete inside word
+
+ca) = change around the end of the sentence
+
+:help text-objects
+
+f(x) = command(text object)
+
+o = insert line below
+O = insert line above
