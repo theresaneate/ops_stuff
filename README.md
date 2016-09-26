@@ -10,3 +10,4 @@ Lesson 4 - 1 Aug 16 </br >
 Lesson 5 - 16 Aug 16 </br >
 Lesson 6 - 24 Aug 16 </br >
 Lesson 7 - 30 Aug 16 </br >
+Lesson 8 - 13 Sept 16
