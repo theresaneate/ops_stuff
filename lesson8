@@ -1,0 +1,20 @@
+13/9
+
+download wordpress tarball  https://wordpress.org/download/
+copy from my current machine to the ubuntu server: 
+scp -i MyKeyFile.pem FileToUpload.pdf ubuntu@ec2-123-123-123-123.compute-1.amazonaws.com:FileToUpload.pdf
+
+-i = to use the key (identity file)
+
+before untar - tar -t to see the files & structure
+tar -xvf wordpress-4.6.1.tar
+check if apache is install - ps -efw (all processes)
+
+root
+
+cd /var/www
+
+homework
+copy wordpress all content to var/www/html  - cp -a = cp all subdirectories, then reload browser
+= live wordpress site, set up db - shut down apache
+service start/stop/restart = sudo service apache2 <restart>
